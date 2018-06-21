@@ -1,15 +1,24 @@
-project='Kong'
-title='public API'
-description='Description of the Kong public API used for developing and testing custom plugins'
-format='discount'
+project = "kong"
+title = "PDK"
+sort = true
+sort_modules = true
+backtick_references = false
+no_lua_ref = true
+all = false
 file={
-  './kong/dao/',
-  './kong/tools/',
-  './spec/',
+  "./kong/pdk/",
 }
-dir='doc'
---readme='readme.md'
-sort=true
-sort_modules=true
---not_luadoc=true
-all=false
+dir = "pdk-reference"
+sort = true
+sort_modules = true
+all = false
+no_space_before_args = true
+
+custom_tags = {
+  { "redirect",
+    hidden = true,
+  },
+  { "phases",
+    title = "Phases",
+  },
+}
